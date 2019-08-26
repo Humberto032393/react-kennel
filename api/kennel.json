@@ -1,26 +1,73 @@
 {
-    "animals": [
-        { "id": 1, "name": "Doodles", "breed": "Poodle", "ownerId":1},
-        { "id": 2, "name": "Decker", "breed": "German Sheperd", "ownerId":1},
-        { "id": 3, "name": "Esme", "breed": "Pitbull", "ownerId":2}
-    ],
-
-    "locations": [
-        { "id": 1, "name": "Nashville South", "address": "123 south street"},
-        { "id": 2, "name": "Nashville North", "address": "1234 north street"},
-        { "id": 3, "name": "Nashville East", "address": "12345 east street"}
-    ],
-
-    "employees": [
-        { "id": 1, "name": "Michael Greens", "address": "123 south street"},
-        { "id": 2, "name": "Susann Johnson", "address": "1234 north street"},
-        { "id": 3, "name": "Jessica Morales", "address": "12345 east street"}
-    ],
-
-    "owners": [
-        { "id": 1, "phoneNumber": "615-605-6679", "name": "George Lopez"},
-        { "id": 2, "phoneNumber": "615-605-6680", "name": "Gabriel Iglesias"},
-        { "id": 3, "phoneNumber": "615-605-6790", "name": "Paul Rodriguez"}
-    ]
-
+  "animals": [
+    {
+      "id": 1,
+      "name": "Doodles",
+      "breed": "Poodle",
+      "ownerId": 1
+    },
+    {
+      "id": 2,
+      "name": "Decker",
+      "breed": "German Sheperd",
+      "ownerId": 1
+    },
+    {
+      "id": 3,
+      "name": "Esme",
+      "breed": "Pitbull",
+      "ownerId": 2
+    }
+  ],
+  "locations": [
+    {
+      "id": 1,
+      "name": "Nashville South",
+      "address": "123 south street"
+    },
+    {
+      "id": 2,
+      "name": "Nashville North",
+      "address": "1234 north street"
+    },
+    {
+      "id": 3,
+      "name": "Nashville East",
+      "address": "12345 east street"
+    }
+  ],
+  "employees": [
+    {
+      "id": 1,
+      "name": "Michael Greens",
+      "job": "Manager"
+    },
+    {
+      "id": 2,
+      "name": "Susann Johnson",
+      "job": "Team Member"
+    },
+    {
+      "id": 3,
+      "name": "Jessica Morales",
+      "job": "Team Member"
+    }
+  ],
+  "owners": [
+    {
+      "id": 1,
+      "phoneNumber": "615-605-6679",
+      "name": "George Lopez"
+    },
+    {
+      "id": 2,
+      "phoneNumber": "615-605-6680",
+      "name": "Gabriel Iglesias"
+    },
+    {
+      "id": 3,
+      "phoneNumber": "615-605-6790",
+      "name": "Paul Rodriguez"
+    }
+  ]
 }

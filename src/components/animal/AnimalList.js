@@ -7,7 +7,7 @@ class AnimalList extends Component {
     //define what this component needs to render
     state = {
         animals: [],
-        owners: []
+        
     }
 
 componentDidMount(){
@@ -21,7 +21,17 @@ componentDidMount(){
     })
 }
 
-
+deleteAnimal = id => {
+    AnimalManager.delete(id)
+    .then(() => {
+      AnimalManager.getAll()
+      .then((newAnimals) => {
+        this.setState({
+            animals: newAnimals
+        })
+      })
+    })
+  }
 
 render(){
     console.log("AnimalList: Render");
@@ -29,11 +39,10 @@ render(){
     return(
       <div className="container-cards">
         {this.state.animals.map(animal =>
-          <AnimalCard key={animal.id} animal={animal} />
+          <AnimalCard key={animal.id} animal={animal} deleteAnimal={this.deleteAnimal} />
         )}
       </div>
-    )
-  }
+    )}
   
 }
 
